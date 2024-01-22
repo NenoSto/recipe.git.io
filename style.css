@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
+* {
+  margin: 0;
+
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+html {
+  font-family: Nunito;
+  font-size: 13px;
+}
+section {
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 90px 0;
+  background-color: rgb(114, 189, 213);
+}
+.container {
+  width: 90%;
+  height: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.brand {
+  text-align: center;
+  font-size: 4rem;
+  color: aliceblue;
+  margin-bottom: 30px;
+}
+form {
+  width: 90%;
+  margin: 20px auto;
+  max-width: 400px;
+  background-color: aliceblue;
+  text-align: left;
+  border-radius: 17px;
+}
+form input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 90%;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+form ion-icon {
+  width: 9%;
+  font-size: 2rem;
+  margin: -8px;
+  color: rgb(99, 99, 99);
+}
+.search-result {
+  width: 100%;
+  margin-top: 50px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template: auto / repeat(auto-fit, minmax(300px, 1fr));
+}
+.item {
+  width: 100%;
+  background-color: rgb(197, 197, 197);
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 6px 6px 6px rgb(39, 39, 39);
+}
+.item img {
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+.item .flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.item .title {
+  color: rgb(6, 6, 6);
+  font-size: 1.7rem;
+  font-weight: 300 bold;
+  margin: 13px 10px 0 0;
+}
+.view-button {
+  text-decoration: none;
+  text-align: center;
+  width: 130px;
+  background-color: rgb(71, 146, 244);
+  padding: 8px 0;
+  color: rgb(227, 240, 252);
+  font-size: 1.3rem;
+  margin-top: 13px;
+  align-self: flex-start;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgb(3, 36, 79);
+}
+.item-data {
+  color: rgb(45, 45, 45);
+  font-size: 1.3rem;
+  display: block;
+  margin-left: 10px;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 80%;
+    margin: 0;
+  }
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+.pagination-number,
+.pagination-button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
+}
